@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight</title>
+    <link rel="stylesheet" href="community.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Add gradient background -->
+    <div class="gradient-bg"></div>
+
+    <!-- Main container -->
+    <div class="community-container">
+        <div class="spotlight-container">
+            <h1>Create Your Spotlight</h1>
+            
+            <!-- Form and Preview in a flex container -->
+            <div class="spotlight-content">
+                <!-- Form Section -->
+                <div class="form-section">
+                    <form id="spotlightForm">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" placeholder="Enter your title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea placeholder="Enter your description" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Upload Image</label>
+                            <input type="file" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Select Tags</label>
+                            <select multiple class="tag-selection">
+                                <option value="python">Python</option>
+                                <option value="webdev">Web Dev</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="design">Design</option>
+                                <option value="mobile">Mobile Dev</option>
+                                <option value="ai">AI/ML</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Background Color</label>
+                            <input type="color" id="backgroundColor" value="#ffffff">
+                        </div>
+
+                        <button type="submit" class="submit-btn">Create Spotlight</button>
+                    </form>
+                </div>
+
+                <!-- Preview Section -->
+                <div class="preview-section">
+                    <h2>Preview</h2>
+                    <div class="post-card" id="previewCard">
+                        <div class="post-header">
+                            <img src="https://via.placeholder.com/50" alt="User Avatar" class="user-avatar">
+                            <div class="post-meta">
+                                <h3>Preview Title</h3>
+                                <p class="post-time">Just now</p>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <img src="https://via.placeholder.com/400x300" alt="Post Image" class="post-image">
+                            <div class="post-description-hover">
+                                <p>Preview Description</p>
+                            </div>
+                        </div>
+                        <div class="post-tags">
+                            <!-- Tags will be added dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="spotlight.js"></script>
+</body>
+</html> 
